@@ -1,7 +1,3 @@
-// ========================================
-// REACTIVE STATE MANAGEMENT (React-like)
-// ========================================
-
 const createStore = (initialState) => {
     let state = initialState;
     let listeners = [];
@@ -20,10 +16,6 @@ const createStore = (initialState) => {
         }
     };
 };
-
-// ========================================
-// CUSTOM HOOK: useTasks()
-// ========================================
 
 const useTasks = (store) => {
     const STORAGE_KEY = 'smart-tasks-v1';
@@ -120,10 +112,6 @@ const useTasks = (store) => {
         syncEffect
     };
 };
-
-// ========================================
-// UI COMPONENTS (React-like)
-// ========================================
 
 const Header = () => `
     <div class="text-center mb-6">
@@ -264,10 +252,6 @@ const App = (state, derivedState) => `
         </div>
     </div>
 `;
-
-// ========================================
-// APPLICATION INITIALIZATION
-// ========================================
 
 const store = createStore({
     tasks: [],
