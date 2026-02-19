@@ -276,7 +276,7 @@ const attachEventListeners = () => {
     form?.addEventListener('submit', (e) => {
         e.preventDefault();
         tasks.addTask(input.value);
-        input.value = ''; // Clear input after adding
+        input.value = '';
         input.focus();
     });
     
