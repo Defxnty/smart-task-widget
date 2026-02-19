@@ -4,7 +4,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Task enter animation */
+/* Анимация появления задачи */
 .task-enter {
     animation: slideIn 0.3s ease-out;
 }
@@ -20,7 +20,7 @@ body {
     }
 }
 
-/* Custom checkbox styling */
+/* Кастомная стилизация чекбокса */
 .checkbox-custom {
     transition: all 0.2s ease;
 }
@@ -29,19 +29,19 @@ body {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
 }
 
-/* Filter button active state */
+/* Активное состояние кнопки фильтра */
 .filter-btn.active {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: white;
 }
 
-/* Completed task text */
+/* Текст выполненной задачи */
 .task-text-completed {
     text-decoration: line-through;
     color: #9ca3af;
 }
 
-/* Custom scrollbar for task list */
+/* Пользовательский скроллбар для списка задач */
 .task-list::-webkit-scrollbar {
     width: 6px;
 }
